@@ -1,0 +1,45 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="adminnavigation.css">
+<link rel="stylesheet" type="text/css" href="addEmp.css">
+
+
+</head>
+<body>
+	
+		<div class="header">
+			<ul class="nav">
+				<li><a href="HR_Page.html">Home</a></li>
+				<li><a href="#" style="color:#1c8adb;font-weight:bold;">Add Employee</a></li>
+				<li><a href="viewEmp.php">View Employee</a></li>
+				<li><a href="deleteEmployee.php">Remove Employee</a></li>
+				<li><a href="logout.php">Logout</a></li>
+				
+			</ul>
+		</div>
+		<div>
+		<img src="loginphoto.jpg" width="100%" >
+		
+		<div class="register" style="width:60%;height:90%;overflow:scroll">
+			<form name="add" action="add_Employee.php" method="post">
+            	<div class="re">
+				<h2>Employee Name<input style="margin-left: 20px;"type="text" name="ename" id="en" required><span id="error" style="margin-left: 180px;"></span></h2>
+				<h2> Email Id  <input style="margin-left: 85px;"type="text" name="email" id="em" required><span id="errorE" style="margin-left: 280px;"></span></h2>
+				<h2>Mobile No <input style="margin-left: 72px;"type="text" name="mob" id="mod" required><span id="errorMM" style="margin-left: 180px;"></span></h2>
+				<h2>Total Salary <input style="margin-left: 59px;"type="text" name="sal"id="ts" required><span id="errorT" style="margin-left: 280px;"></span></h2>
+				<h2>Employee Id <input style="margin-left: 55px;"type="text" name="id" id="empid" required><span id="errorA" style="margin-left: 280px;"></span></h2>			
+				<h2>Password <input style="margin-left: 79px;"type="password" name="pass"required></h2>
+				
+				
+
+				<br>
+				
+				<input type="submit" name="register" value="Register" onclick="errorMessage()">
+			</div>
+		</form>	
+		</div>
+	<script type="text/javascript" src="validation.js"></script> 
+</body>
+
+</html>

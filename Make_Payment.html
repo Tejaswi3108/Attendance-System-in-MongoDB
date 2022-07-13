@@ -1,0 +1,50 @@
+<?
+session_start();
+
+?>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="adminnavigation.css">
+<link rel="stylesheet" type="text/css" href="addEmp.css">
+
+
+</head>
+<body>
+	
+		<div class="header">
+			<ul class="nav">
+				<li><a href="Accountant_Page
+				.html">Home</a></li>
+				<li><a href="#" style="color:#1c8adb;font-weight:bold;">Make Payment</a></li>
+				<li><a href="fund.php">Fund</a></li>
+				
+				<li><a href="logout.php">Logout</a></li>
+				
+			</ul>
+		</div>
+		<img src="loginphoto.jpg" width="100%">
+		
+		<div class="register" style="width:60%;height:90%;overflow:scroll">
+			<form name="add" action="makePayment_salary.php" method="post">
+            	<div class="re">
+	
+				<h2>Date of Payment<input style="margin-left: 20px;"type="date" name="date" required></h2>
+				<h2> Basic Salary<input style="margin-left: 85px;"type="text" name="bs" id="bss" required> <span id="error" style="margin-left: 180px;"></span></h2>
+				<h2>PA<input style="margin-left:170px"type="text" name="pa" id="pa" required><span id="errorP" style="margin-left: 180px;"></span></h2>
+				<h2>PF <input style="margin-left: 170px;"type="text" name="pf" id="pf" required><span id="errorf" style="margin-left: 180px;"></span></h2>
+				<h2>Gratuity <input style="margin-left: 120px;"type="text" name="grat" id="grat" required><span id="errorg" style="margin-left: 180px;"></span></h2>		
+				<h2>Performance Pay <input style="margin-left: 40px;"type="text" name="pp" id="pp" required><span id="errorpp" style="margin-left: 180px;"></span></h2>
+				<h2>Total Salary <input style="margin-left: 90px;"type="text" name="ts" id="ts" required><span id="errort" style="margin-left: 180px;"></span></h2>
+				<h2><input type="hidden" name="status" value="Paid"></h2>
+				
+
+				<br>
+				
+				<input type="submit" name="register" value="Make Payment" onclick="errorMessage()">
+			</div>
+		</form>	
+		</div>
+	<script type="text/javascript" src="validation1.js"></script> 
+</body>
+</html>

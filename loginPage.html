@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="navigation.css">
+<link rel="stylesheet" type="text/css" href="loginPage.css">
+
+<script>
+
+	
+</script>
+
+</head>
+
+
+	
+	<div class="header">
+			<h1>Salary Management System</h1>
+			
+			<ul class="nav">
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="#" style="color:#1c8adb;font-weight:bold;">Login</a></li>
+		
+			</ul>
+	</div>
+	
+<img src="loginphoto.jpg" width="100%">
+	
+	<div class="login-box">
+		
+			<img src="avatar.png" class="avatar">
+			<h1>Login</h1>
+            
+			<form action="loginConnect.php" method="post">
+            
+			<p>Username</p><p><span><?php echo $msg;?></span></p>
+            <input type="text" name="username" required>
+
+			<p>Password</p>
+            <input type="password" name="password" required>
+			
+			<p>Select Type</p>
+			<select  class="logintype" name="type">
+				<option value="hr">HR</option>
+				<option value="employee">Employee</option>
+				<option value="accountant">Accountant</option>
+			</select>
+			
+			<input type="submit" name="submit" value="Login"> 
+				
+            </form>
+        
+    </div>
+		
+</body>
+
+</html>

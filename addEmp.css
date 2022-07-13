@@ -1,0 +1,74 @@
+.register{
+    width: 600px;
+    height: 500px;
+    background: #e6f3ff;
+    color: #fff;
+    top: 58%;
+    left: 54%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.register h2{
+    font-weight: bold;
+	color:#000;
+	font-family:rockwell;
+	position:relative;
+    font-size: 18px;
+	left:20%;
+	
+}
+.register h1{
+    font-weight: bold;
+    color:#fff ;
+    font-family:rockwell;
+    position:relative;
+    font-size: 22px;
+    left:50%;
+    
+}
+.register input[type="text"], input[type="password"],input[type="date"],select
+{
+    background: transparent;
+    border-radius:10px;
+    height: 28px;
+    color: #000;
+    font-size: 16px;
+	border-color:#1c8adb;
+	width: 40%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+.register input[type="submit"]
+{
+	position: absolute;
+    left:36%;
+	top:100%;
+	border: none;
+    outline: none;
+    height: 40px;
+	width: 30%;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    font-family: rockwell;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.register input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #7e9ea3;
+    color: #000;
+}
+
+.re{
+    position: absolute;
+    top: 5%;
+    width:80%;
+    left: 8%;
+}

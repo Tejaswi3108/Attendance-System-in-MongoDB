@@ -1,0 +1,110 @@
+<html>
+<head>
+<style type="text/css">
+.container {
+  background:#000;
+  width:500px;
+  margin: 0 auto;
+  padding: 10px 10px 0 10px;
+}
+.slideshow_wrapper {
+  width:500px;
+  height:280px;
+  overflow: hidden;
+   
+}
+
+.slideshow {
+  width:1500px;
+  height:280px;
+  margin: 0 0 0 -1000px;
+ position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration:5s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:reverse;
+   -webkit-animation-play-state: running;
+}
+
+.slide {
+  
+  width:500px;
+  height: 270px;
+  position:relative;
+  float:left;
+  overflow:hidden;
+  
+}
+
+.slideshow img{
+  width:500px; height:270px;
+}
+
+@-webkit-keyframes slide_animation {
+  
+  0% {left:0px;}
+  10% {left:500px;}
+  20% {left:500px;}
+  30% {left:500px;}
+  40% {left:500px;}
+  50% {left:500px;}
+  60% {left:500px;}
+  70% {left:1000px;}
+  80% {left:1000px;}
+  90% {left:1000px;}
+  100% {left:1000px;}
+  
+  
+}
+.i{
+
+      position: absolute;
+      top: 60px;
+      left: 270px;
+       border-radius: 50%;
+    
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="navigation.css">
+</head>
+<body>
+
+	<div class="header">
+			<h1>Salary Management System</h1>
+			
+			<ul class="nav">
+			
+				<li><a href="#" style="color:#1c8adb;font-weight:bold;">Home</a></li>
+				<li><a href="loginPage.html">Login</a></li>
+				    
+			</ul>
+		</div>
+		<img src="loginphoto.jpg" width="100%">
+		<br><br><br><br><br><br><br>
+		  <div class="centered">
+			<div class="container">
+		<div class="slideshow_wrapper">
+			<div class="slideshow" class="over-img">
+				<div class="slide_one slide">
+					<img src="p1.jpg" />
+				</div>
+      				<div class="slide_three slide">
+						<img  src="p2.jpg" />
+					</div>
+					<div class="slide_two slide">
+						<img  src="p1.jpg" />
+					</div>
+					<div class="slide_four slide">
+						<img  src="p2.jpg" />
+					</div>
+		</div></div></div></div>
+</body>
+</html>
